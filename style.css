@@ -1,0 +1,169 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    color: #2c6b2f;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.site-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.site-header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.main-nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Search Section --- */
+.search-section input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* --- Card Styles --- */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-small {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.card-small h3 {
+    margin-top: 0;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    display: block;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+
+/* --- Footer --- */
+.site-footer {
+    background-color: #333;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+    .main-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .site-header h1 {
+        font-size: 2em;
+    }
+}
